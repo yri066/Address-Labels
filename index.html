@@ -5,11 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Генератор адресных табличек Курска</title>
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./css/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.png">
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.autosize.input.min.js"></script>
     <script src="./js/jspdf.debug.js"></script>
     <script src="./js/jspdf.plugin.text-align.js"></script>
+	<script src="./js/jquery.easy-autocomplete.min.js"></script>
 
 </head>
 
@@ -42,14 +44,14 @@
             <div class="footer">
                 <!--Номер с которого начинается улица-->
                 <div class="last-number">
-                    <input type="text" name="last-number" value="21" id="fieldLastHouseNumber"
+                    <input type="text" name="last-number" value="" placeholder="1" id="fieldLastHouseNumber"
                         data-autosize-input='{ "space": 40 }'>
                 </div>
                 <input type="text" name="street" value="" placeholder="Название on English" id="fieldStreetNameEnglish"
                     data-autosize-input='{ "space": 40 }'>
                 <!--Номер на который заканчивается улица-->
                 <div class="next-number">
-                    <input type="text" name="next-number" value="53" id="fieldNextHouseNumber"
+                    <input type="text" name="next-number" value="" placeholder="99" id="fieldNextHouseNumber"
                         data-autosize-input='{ "space": 40 }'>
                 </div>
             </div>
@@ -58,7 +60,7 @@
         <div class='fields-right'>
             <!--Номер дома разумеется-->
             <div class='street-number'>
-                <input type="text" name="street-number" value="54" id="fieldHouseNumber">
+                <input type="text" name="street-number" value="" placeholder="54" id="fieldHouseNumber">
             </div>
         </div>
     </div>

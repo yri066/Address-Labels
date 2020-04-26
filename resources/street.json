@@ -1,0 +1,57 @@
+[
+  {
+    "fieldStreetName": "50 ЛЕТ ОКТЯБРЯ",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "50 years of October street"
+  },
+  {
+    "fieldStreetName": "8-Й ЛОГ",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "8th Log Street"
+  },
+  {
+    "fieldStreetName": "8-Е МАРТА",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "March 8th Street"
+  },
+  {
+    "fieldStreetName": "9-Й ЛОГ",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "9th Log Street"
+  },
+  {
+    "fieldStreetName": "АБРИКОСОВАЯ",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "Apricot Street"
+  },
+  {
+    "fieldStreetName": "АВТОДРОМНАЯ",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "Autodromnaya street"
+  },
+  {
+    "fieldStreetName": "АВРААМОВСКАЯ",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "Avraamovskaya street"
+  },
+  {
+    "fieldStreetName": "АВТОДРОМНЫЙ 1-Й",
+    "fieldStreet": "Переулок",
+    "fieldStreetNameEnglish": "Autodromy 1st lane"
+  },
+  {
+    "fieldStreetName": "АВТОДРОМНЫЙ 2-Й",
+    "fieldStreet": "Переулок",
+    "fieldStreetNameEnglish": "Autodromy 2nd lane"
+  },
+  {
+    "fieldStreetName": "АВТОДРОМНЫЙ 3-Й",
+    "fieldStreet": "Переулок",
+    "fieldStreetNameEnglish": "Autodromy 3rd lane"
+  },
+  {
+    "fieldStreetName": "МАГИСТРАЛЬНАЯ",
+    "fieldStreet": "Улица",
+    "fieldStreetNameEnglish": "Magistralnaia Street"
+  }
+]
