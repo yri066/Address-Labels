@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Генератор адресных табличек Курска</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/easy-autocomplete.css">
+    <link rel="icon" href="favicon.png">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.autosize.input.min.js"></script>
+    <script src="./js/jspdf.debug.js"></script>
+    <script src="./js/jspdf.plugin.text-align.js"></script>
+    <script src="./js/jquery.easy-autocomplete.min.js"></script>
+
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Генератор адресных табличек Курска</h1>
+        <p>Просто генератор табличек сделанный по образу и подобие представленного примера кафедры программной инженерии
+            ЮЗГУ по назначению ректора</p>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Сам генератор-->
+    <div class='fields' id="element">
+        <div class='fields-left'>
+
+            <!--тип-->
+            <div class='street-type'>
+                <input type="text" name="street-type" value="Улица" id="fieldStreet"
+                    data-autosize-input='{ "space": 40 }'>
+            </div>
+            <div class="body">
+                <!--Наименование улицы-->
+                <div class='street-name'>
+                    <input type="text" name="street" value="" placeholder="Название" id="fieldStreetName">
+                </div>
+            </div>
+
+            <div class="footer">
+                <!--Номер с которого начинается улица-->
+                <div class="last-number">
+                    <input type="text" name="last-number" value="21" id="fieldLastHouseNumber"
+                        data-autosize-input='{ "space": 40 }'>
+                </div>
+                <input type="text" name="street" value="" placeholder="Название on English" id="fieldStreetNameEnglish"
+                    data-autosize-input='{ "space": 40 }'>
+                <!--Номер на который заканчивается улица-->
+                <div class="next-number">
+                    <input type="text" name="next-number" value="53" id="fieldNextHouseNumber"
+                        data-autosize-input='{ "space": 40 }'>
+                </div>
+            </div>
+        </div>
+
+        <div class='fields-right'>
+            <!--Номер дома разумеется-->
+            <div class='street-number'>
+                <input type="text" name="street-number" value="54" id="fieldHouseNumber">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <center>
+        <input type="button" id="buttonDownloadSign" onclick="editBound()" value="Скачать табличку">
+    </center>
+    <script src="./js/style.js"></script>
+</body>
+
+</html>
