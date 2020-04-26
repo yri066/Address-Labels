@@ -1,0 +1,145 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../font/Roboto-Bold.ttf");
+} 
+
+h1,h2, h3, text, div, input{
+	font-family: "Roboto";
+}
+
+body{
+	background-color:#eaebf0;
+}
+
+input[type="text"] {
+	text-align: center;
+	background-color: #FFF;
+	color: #221e55;
+	border: 2px solid transparent;
+	font-size: 36px;
+	font-weight: 200;
+	padding: 10px 0;
+	font-weight: 200;
+}
+
+#fieldStreetNameEnglish{
+	text-align: center;
+	background-color: #FFF;
+	color: #221e55;
+	border: 2px solid transparent;
+	font-size: 36px;
+	font-weight: 200;
+	padding: 10px 0;
+	font-style: italic;
+}
+
+#fieldStreetName{
+	text-align: center;
+	background-color: #FFF;
+	color: #221e55;
+	border: 2px solid transparent;
+	font-size: 114px;
+	font-weight: 200;
+	padding: 10px 0;
+}
+
+
+#fieldHouseNumber {
+	text-align: center;
+	background-color: #221e55;
+	color: #eaebf0;
+	border: 2px solid transparent;
+	font-size: 148px;
+	font-weight: 200;
+	padding: 10px 0;
+	width: 100%;
+}
+
+input:focus {
+	border: 2px solid #3498DB;
+	box-shadow: none;
+}
+
+.fields {
+	background-color: #a7b2c1;
+	display: block;
+	width: 1125px;
+	height: 300px;
+	margin: auto;
+}
+
+.fields-left {
+	background-color: #FFF;
+	text-align: center;
+	float: left;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: stretch;
+	min-height: 100%;
+}
+
+.last-number {
+	display:flex;
+	flex-direction: row;
+	align-items: flex-end;
+	float: left;
+	height:100%;
+	width: 175px;
+}
+.current-number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: inline-block;
+	height:100%;
+	width:auto;
+}
+
+.street-type {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+.street-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.next-number {
+	display:flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+	float: right;
+	height:100%;
+	width: 175px;
+}
+
+.fields-right {
+	background-color: #221e55;
+	display: inline-block;
+	text-align: center;
+	float: right;
+	height: 100%;
+}
+
+.street-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer {
+	flex: 0 1 auto;
+}
+
+.body {
+	flex: 1 1 auto;
+	align-items: center;
+	justify-content: center;
+}
