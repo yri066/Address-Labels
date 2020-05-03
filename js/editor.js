@@ -175,8 +175,6 @@ var options = {//отвечает за поиск улиц
 
 			resizeForm();
 
-			$("#eac-container-fieldStreetName").width($("#fieldStreetName").width() + 4);
-			$('#eac-container-fieldStreetName').css('left', $("#fieldStreetName").position().left + 'px');
 		}
 	}
 };
