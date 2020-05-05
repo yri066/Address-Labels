@@ -1,6 +1,11 @@
 @font-face {
 	font-family: "Roboto";
 	src: url("../font/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: "DejaVuSans-Bold";
+	src: url("../font/DejaVuSans-Bold.ttf");
 } 
 
 h1,h2, h3, text, div, input{
@@ -143,4 +148,14 @@ input:focus {
 	flex: 1 1 auto;
 	align-items: center;
 	justify-content: center;
+}
+
+.leftArrowSelect, .rightArrowSelect {
+    font-family: "DejaVuSans-Bold";
+    background-color: #FFF;
+	color: #221e55;
+	border: 2px solid transparent;
+	height: 100%;
+	width: 86px;
+	font-size: 56px;
 }

@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "задача-Address-Labels",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

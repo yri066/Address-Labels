@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -44,15 +44,23 @@
             <div class="footer">
                 <!--Номер с которого начинается улица-->
                 <div class="last-number">
+                    <select class="leftArrowSelect" id="fieldLeftArrowSelect">
+                        <option value=""></option>
+                        <option value="←" selected>←</option>
+                    </select>
                     <input type="text" name="last-number" value="" placeholder="1" id="fieldLastHouseNumber"
-                        data-autosize-input='{ "space": 40 }'>
+                           data-autosize-input='{ "space": 40 }'>
                 </div>
                 <input type="text" name="street" value="" placeholder="Title on English" id="fieldStreetNameEnglish"
                     data-autosize-input='{ "space": 40 }'>
                 <!--Номер на который заканчивается улица-->
                 <div class="next-number">
+                    <select class="rightArrowSelect" id="fieldRightArrowSelect">
+                        <option value=""></option>
+                        <option value="→" selected>→</option>
+                    </select>
                     <input type="text" name="next-number" value="" placeholder="99" id="fieldNextHouseNumber"
-                        data-autosize-input='{ "space": 40 }'>
+                           data-autosize-input='{ "space": 40 }'>
                 </div>
             </div>
         </div>
