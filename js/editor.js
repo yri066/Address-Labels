@@ -109,7 +109,7 @@ $( "#buttonDownloadSign" ).click(function editBound() { //экспорт изо�
 
 	var InputRightHeight = inputRightSize / 4;
 	
-	var fieldLeftArrowSelect = getWidthOfText("#fieldLeftArrowSelect"), fieldRightArrowSelect = getWidthOfText("#fieldLeftArrowSelect"); //отступ по длине стрелки
+	var fieldLeftArrowSelect = getWidthOfText("#fieldLeftArrowSelect"), fieldRightArrowSelect = getWidthOfText("#fieldRightArrowSelect"); //отступ по длине стрелки
 	
 	var fieldArrowSelectSize = $("#fieldLeftArrowSelect").css('font-size'); // размер шрифта для стрелок
 	fieldArrowSelectSize = + fieldArrowSelectSize.slice(0, fieldArrowSelectSize.indexOf('p'));
