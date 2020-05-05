@@ -150,19 +150,9 @@ input:focus {
 	justify-content: center;
 }
 
-.leftArrowSelect {
+.leftArrowSelect, .rightArrowSelect {
     font-family: "DejaVuSans-Bold";
     background-color: #FFF;
-	color: #221e55;
-	border: 2px solid transparent;
-	height: 100%;
-	width: 86px;
-	font-size: 56px;
-}
-
-.rightArrowSelect {
-    font-family: "DejaVuSans-Bold";
-	background-color: #FFF;
 	color: #221e55;
 	border: 2px solid transparent;
 	height: 100%;
