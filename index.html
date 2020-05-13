@@ -1,66 +1,103 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Генератор адресных табличек</title>
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
-	<link href="./css/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="favicon.png">
+	<link href="./css/jquery.kladr.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="images/favicon.ico">
+
     <script src="./js/jquery.js"></script>
+
     <script src="./js/jquery.autosize.input.min.js"></script>
+
     <script src="./js/jspdf.debug.js"></script>
+
+    <script src="./js/translate.js"></script>
+
     <script src="./js/jspdf.plugin.text-align.js"></script>
-	<script src="./js/jquery.easy-autocomplete.min.js"></script>
+
+    <script type="text/javascript" src="./js/jquery.fias.min.js"></script>
+
+    <script defer type="text/javascript" src="./js/editor.js"></script>
 
 </head>
 
-<body>
+<body id='textform'> 
     <div style="text-align: center;">
-        <h1>Генератор адресных табличек</h1>
-        <p>Просто генератор табличек сделанный по образу и подобие представленного примера кафедры программной инженерии
-            ЮЗГУ по назначению ректора</p>
+        <h1>Генератор адресных табличек<br>Курска</h1>
+        <p>Введите название улицы(автодополнение из базы КЛАДР), номер дома и номера конечных домов</p>
+        <p>(Перевод и тип улицы подставляется автоматически)</p>
+        <p>Если стрелки не нужны, оставьте поля пустыми.</p>
     </div>
 
     <br>
     <br>
 
+
     <!--Сам генератор-->
-    <div class='fields' id="element">
+    <div class='fields' id="element" >
         <div class='fields-left'>
 
             <!--тип-->
             <div class='street-type'>
-                <input type="text" name="street-type" value="Улица" id="fieldStreet"
+                <div  id="type">
+                <input class="value" type="text" name="street-type"  placeholder="Тип" id="fieldStreet"
                     data-autosize-input='{ "space": 40 }'>
+                    </div>
+
+                       
+                  
+
             </div>
             <div class="body">
                 <!--Наименование улицы-->
                 <div class='street-name'>
-                    <input type="text" name="street" value="" placeholder="Название" id="fieldStreetName">
+                     <div class ="address">
+                        <div class="field">
+                            <div id="name"> 
+                            <input class="value" id="fieldStreetName" name="address" type="text" value="" placeholder="Название" data-autosize-input='{ "space": 40 }'>
+                        </div>
+                        </div>
+
+                        <div style="display:none;"class="field">
+                            <label><input name="parent" type="radio" value="kursk" checked>Курск</label>
+                        </div>
+                  
+                    </div>
                 </div>
             </div>
 
             <div class="footer">
+                
                 <!--Номер с которого начинается улица-->
                 <div class="last-number">
-                    <select class="leftArrowSelect" id="fieldLeftArrowSelect">
+
+                     <select class="leftArrowSelect" id="fieldLeftArrowSelect">
                         <option value=""></option>
-                        <option value="←" selected>←</option>
+                        <option value="←&ensp;" selected>←</option>
                     </select>
+
+
                     <input type="text" name="last-number" value="" placeholder="1" id="fieldLastHouseNumber"
-                           data-autosize-input='{ "space": 40 }'>
+                        data-autosize-input='{ "space": 40 }'>
                 </div>
                 <input type="text" name="street" value="" placeholder="Title on English" id="fieldStreetNameEnglish"
                     data-autosize-input='{ "space": 40 }'>
                 <!--Номер на который заканчивается улица-->
                 <div class="next-number">
+
                     <select class="rightArrowSelect" id="fieldRightArrowSelect">
                         <option value=""></option>
-                        <option value="→" selected>→</option>
+                        <option value="&ensp;→" selected>→</option>
                     </select>
+
+
+
                     <input type="text" name="next-number" value="" placeholder="99" id="fieldNextHouseNumber"
-                           data-autosize-input='{ "space": 40 }'>
+                        data-autosize-input='{ "space": 40 }'>
                 </div>
             </div>
         </div>
@@ -76,10 +113,16 @@
     <br>
     <br>
 
+
+
+
     <center>
-        <input type="button" id="buttonDownloadSign" value="Скачать табличку">
+        <input class='inputbut' type="button" id="buttonDownloadSign" value="Скачать табличку">
     </center>
-    <script src="./js/editor.js"></script>
+   
+
+    
+
 </body>
 
 </html>

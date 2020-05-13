@@ -2,11 +2,10 @@
 	font-family: "Roboto";
 	src: url("../font/Roboto-Bold.ttf");
 }
-
 @font-face {
 	font-family: "DejaVuSans-Bold";
 	src: url("../font/DejaVuSans-Bold.ttf");
-} 
+}
 
 h1,h2, h3, text, div, input{
 	font-family: "Roboto";
@@ -46,6 +45,7 @@ input[type="text"] {
 	font-size: 114px;
 	font-weight: 200;
 	padding: 10px 0;
+	min-width:500px;
 }
 
 
@@ -61,14 +61,14 @@ input[type="text"] {
 }
 
 input:focus {
-	border: 2px solid #3498DB;
+	outline: none;
 	box-shadow: none;
 }
 
 .fields {
 	background-color: #a7b2c1;
 	display: block;
-	width: 1125px;
+	width: 1325px;
 	height: 300px;
 	margin: auto;
 }
@@ -91,7 +91,7 @@ input:focus {
 	align-items: flex-end;
 	float: left;
 	height:100%;
-	width: 175px;
+	width: 225px;
 }
 .current-number {
 	display: flex;
@@ -122,7 +122,7 @@ input:focus {
 	align-items: flex-end;
 	float: right;
 	height:100%;
-	width: 175px;
+	width: 225px;
 }
 
 .fields-right {
@@ -149,7 +149,24 @@ input:focus {
 	align-items: center;
 	justify-content: center;
 }
+.inputbut{
+	width: 300px;
+	height: 100px;
+	background-color:#221e55;
+	color: white;
+	font-size: 25px; 
+	outline: none;
+}
+.inputbut:hover{
+	background-color:#061376;
+}
+.inputbut:activ{
+	background-color: #717abf;
 
+}
+p{
+ color:grey;
+}
 .leftArrowSelect, .rightArrowSelect {
     font-family: "DejaVuSans-Bold";
     background-color: #FFF;
