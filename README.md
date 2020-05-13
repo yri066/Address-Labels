@@ -1,3 +1,3 @@
 # Create Address Labels
 
-![Logo](/images/image.jpg)
+![Logo](/images/image.gif)
